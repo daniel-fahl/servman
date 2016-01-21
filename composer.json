@@ -1,0 +1,8 @@
+{
+    "name": "godmodex-de/servman",
+    "require": {
+        "toin0u/digitalocean-v2": "~2.0",
+        "guzzle/guzzle": "~3.7",
+        "monolog/monolog": "^1.17"
+    }
+}
