@@ -5,9 +5,11 @@ require __DIR__ . '/vendor/autoload.php';
 use DigitalOceanV2\Adapter\GuzzleAdapter;
 use DigitalOceanV2\DigitalOceanV2;
 
+include_once 'config.php';
+
 // create an adapter with DigitalOcean access token
 // and initialize DigitalOceanV2 API object
-$adapter = new GuzzleAdapter('89ce7818d8f450c844d41e72f8b9be321a7d6d8401ddffb96aaad684ab3d6bda');
+$adapter = new GuzzleAdapter($apikey);
 $digitalocean = new DigitalOceanV2($adapter);
 
 $userInfo = $digitalocean->account()->getUserInformation();
