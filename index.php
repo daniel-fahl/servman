@@ -75,7 +75,7 @@ foreach($allDroplets as $droplet) {
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li>
-              <a href="#">You are using the account of <?=$userInfo->email?></a>
+              <a href="#">You are using the account <?=$userInfo->email?></a>
             </li>
           </ul>
         </div><!--/.navbar-collapse -->
